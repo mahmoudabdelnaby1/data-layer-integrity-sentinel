@@ -1,0 +1,12 @@
+{
+  "purchase": {
+    "required": [
+      "ecommerce"
+    ]
+  },
+  "add_to_cart": {
+    "required": [
+      "ecommerce"
+    ]
+  }
+}

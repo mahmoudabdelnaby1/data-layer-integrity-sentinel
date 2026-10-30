@@ -1,0 +1,9 @@
+name: Data Layer CI Sentinel
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate dataLayer integrity
+        run: python src/datalayer_sentinel.py --datalayer examples/sample_page_datalayer.json

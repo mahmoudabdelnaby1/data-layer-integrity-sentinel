@@ -1,0 +1,8 @@
+{
+  "event": "purchase",
+  "ecommerce": {
+    "transaction_id": "ORD-1234",
+    "value": 299.0,
+    "currency": "SAR"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "event": "purchase",
+    "ecommerce": {
+      "transaction_id": "T_12345",
+      "value": 450.0,
+      "tax": 67.5,
+      "shipping": 25.0,
+      "currency": "SAR",
+      "coupon": "EID_PROMO",
+      "items": [
+        {
+          "item_id": "SKU-9921",
+          "item_name": "Premium Oud Oil 12ml",
+          "price": 450.0,
+          "quantity": 1,
+          "item_brand": "Royal Perfumes",
+          "item_category": "Fragrances"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "purchase_schema": {
+    "type": "object",
+    "required": [
+      "event",
+      "ecommerce"
+    ],
+    "properties": {
+      "event": {
+        "type": "string",
+        "enum": [
+          "purchase"
+        ]
+      },
+      "ecommerce": {
+        "type": "object",
+        "required": [
+          "transaction_id",
+          "value",
+          "currency",
+          "items"
+        ],
+        "properties": {
+          "transaction_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string",
+            "enum": [
+              "SAR",
+              "AED",
+              "EGP",
+              "USD",
+              "EUR",
+              "KWD"
+            ]
+          },
+          "items": {
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    }
+  }
+}
